@@ -1,31 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
 
-@media (max-width: 991px){
-
-    html{
-        font-size: 55%;
-    }
-
-    .header{
-        padding: 1.5rem 2rem;
-    }
-}
-
-@media (max-width: 991px){
-
-    #menu-btn{
-        display: inline-block;
-    }
-    .header .navbar{
-        position: absolute;
-        top: 100%; right: 0;
-        background: white;
-        background: 30rem;
-    }
-}
-
-
-
 :root{
     --main-color:#d3ad7f;
     --black:#13131a;
@@ -87,13 +61,17 @@ body{
 .header .navbar a{
     margin: 0 1rem;
     font-size: 1.6rem;
-    color:#fff;
+    color: white;
 }
 
 .header .navbar a:hover{
     color: var(--main-color);
     border-bottom: .1rem solid var(--main-color);
     padding-bottom: .5rem;
+}
+
+.header .navbar.active{
+    right: 0;
 }
 
 .header .icons div{ 
@@ -109,4 +87,141 @@ body{
 
 #menu-btn{
     display: none;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/dream4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+.home .content{
+    max-width: 60rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color:white;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span{
+    color:var(--main-color);
+}
+
+.home .content p{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color:white
+}
+
+.heading{
+    text-align: center;
+    color: white;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+
+}
+
+.about .row .image{
+    flex: 1 1 45rem;
+}
+
+.about .row .image img{
+    width: 100%
+}
+
+.about .row .content{
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: #fff;
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+@media (max-width: 991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 100%; right: -100%;
+        background: white;
+        width: calc(100vh - 9.5rem);
+    }
+    
+    .header .navbar a{
+        color: var(--black);
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+
+    .home{
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3{
+        font-size:  4.5rem;
+    }
+
+    .home .content p{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 450px){
+
+    html{
+        font-size: 50%
+    }
+
+
 }
