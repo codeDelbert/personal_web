@@ -105,7 +105,7 @@ section{
 .home .content h3{
     font-size: 6rem;
     text-transform: uppercase;
-    color:white;
+    color:#fff;
     padding-bottom: 3.5rem;
     font-size: 4rem;
 }
@@ -115,11 +115,11 @@ section{
 }
 
 .home .content p{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: lighter;
     line-height: 1.8;
     padding: 1rem 0;
-    color:white
+    color:#fff
 }
 
 .heading{
