@@ -168,7 +168,7 @@ section{
 
 .activity .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
     gap: 1.5rem;
 }
 
