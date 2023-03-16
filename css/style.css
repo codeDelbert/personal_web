@@ -179,7 +179,7 @@ section{
 }
 
 .activity .box-container .box img{
-    max-width:100%;
+    max-width: 100%;
 }
 
 .activity .box-container .box h3{
@@ -192,6 +192,58 @@ section{
     color: #fff;
     font-size: 1.8rem;
     padding: 0.5rem 0;
+}
+
+.award .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    gap: 1.5rem;
+}
+
+.award .box-container .box{
+    padding: 4rem;
+    text-align: center;
+    border: var(--border);
+}
+
+.award .box-container .box img{
+    max-width: 100%;
+}
+
+.award .box-container .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.award .box-container .box .experience{
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 0.5rem 0;
+}
+
+.footer{
+    color: var(--bg);
+    padding: 1.5rem 0;
+    margin-top: 1rem;
+}
+
+.footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+}
+
+.footer .container .footer-text{
+    margin: 0 1rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.footer .container .footer-icon{
+    color: #fff;
+    font-size: 2.5rem;
 }
 
 @media (max-width: 991px){
