@@ -201,13 +201,30 @@ section{
 }
 
 .award .box-container .box{
-    padding: 4rem;
+    padding: 3rem;
     text-align: center;
     border: var(--border);
+    height: 70rem;
 }
 
 .award .box-container .box img{
     max-width: 100%;
+}
+
+.award .box-container .box .img_long{
+    max-height: 65%;
+}
+
+.award .box-container .box #rotary{
+    filter: brightness(120%);
+}
+
+.award .box-container .box #rotaryinfrom{
+    filter: brightness(70%);
+}
+
+.award .box-container .box #chemical{
+    filter: brightness(130%);
 }
 
 .award .box-container .box h3{
